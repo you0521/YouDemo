@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ButtonOneActivity">
+
+    <top.androidman.SuperButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        app:color_normal="@color/colorAccent"
+        app:corner="30dp"
+        app:text="按钮"
+        app:textColor="@color/colorPrimary"
+        app:textSize="22sp" />
+
+    <top.androidman.SuperButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        app:color_normal="@color/colorAccent"
+        app:corner="30dp"
+        app:corner_left_bottom="0dp"
+        app:text="按钮"
+        app:textColor="@color/colorPrimary"
+        app:textSize="22sp" />
+
+    <top.androidman.SuperButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        app:color_normal="@color/colorAccent"
+        app:color_pressed="@color/color_14c7de"
+        app:corner="30dp"
+        app:text="点击会变色"
+        app:textColor="@color/colorPrimary"
+        app:textSize="22sp" />
+
+    <top.androidman.SuperButton
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_margin="20dp"
+        app:color_normal="@color/colorAccent"
+        app:drawable_middle="@mipmap/ic_launcher"
+        app:drawable_middle_height="50dp"
+        app:drawable_middle_width="50dp"
+        app:shape="CIRCLE" />
+
+    <top.androidman.SuperButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        app:border_color="@color/color_6596ff"
+        app:border_width="2dp"
+        app:color_normal="@color/colorAccent"
+        app:corner="30dp"
+        app:text="按钮"
+        app:textColor="@color/colorPrimary"
+        app:textSize="22sp" />
+
+</LinearLayout>
