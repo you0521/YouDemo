@@ -7,6 +7,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.youdemo.Activity.ButtonOneActivity;
+import com.example.youdemo.Activity.ButtonTwoActivity;
 import com.example.youdemo.Utils.IntentUtils;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -15,6 +16,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 按钮整的挺好看
      */
     private Button mBtnOne;
+    /**
+     * 加载整的挺好看
+     */
+    private Button mBtnTwo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initView() {
         mBtnOne = (Button) findViewById(R.id.btn_one);
         mBtnOne.setOnClickListener(this);
+        mBtnTwo = (Button) findViewById(R.id.btn_two);
+        mBtnTwo.setOnClickListener(this);
     }
 
     @Override
@@ -35,6 +42,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_one:
                 IntentUtils.startIntent(this, ButtonOneActivity.class);
+                break;
+            case R.id.btn_two:
+                IntentUtils.startIntent(this, ButtonTwoActivity.class);
                 break;
         }
     }
