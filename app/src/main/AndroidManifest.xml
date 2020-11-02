@@ -3,6 +3,7 @@
     package="com.example.youdemo">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.ButtonThreeActivity"></activity>
+        <activity android:name=".Activity.ButtonSixActivity"></activity>
+        <activity android:name=".Activity.ButtonFiveActivity" />
+        <activity android:name=".Activity.ButtonFourActivity" />
+        <activity android:name=".Activity.ButtonThreeActivity" />
         <activity android:name=".Activity.ButtonTwoActivity" />
         <activity android:name=".Activity.ButtonOneActivity" />
         <activity android:name=".MainActivity">

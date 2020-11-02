@@ -34,6 +34,24 @@
                 android:layout_height="wrap_content"
                 android:text="相机整的挺好看" />
 
+            <Button
+                android:id="@+id/btn_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Glide整一下" />
+
+            <Button
+                android:id="@+id/btn_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PopWindow" />
+
+            <Button
+                android:id="@+id/btn_six"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SuperTextView文字挺好看"/>
+
         </LinearLayout>
 
     </ScrollView>
