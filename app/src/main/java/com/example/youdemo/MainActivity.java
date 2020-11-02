@@ -6,9 +6,11 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.youdemo.Activity.ButtonEightActivity;
 import com.example.youdemo.Activity.ButtonFiveActivity;
 import com.example.youdemo.Activity.ButtonFourActivity;
 import com.example.youdemo.Activity.ButtonOneActivity;
+import com.example.youdemo.Activity.ButtonSevenActivity;
 import com.example.youdemo.Activity.ButtonSixActivity;
 import com.example.youdemo.Activity.ButtonThreeActivity;
 import com.example.youdemo.Activity.ButtonTwoActivity;
@@ -40,6 +42,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * SuperTextView文字挺好看
      */
     private Button mBtnSix;
+    /**
+     * 时间、小数点转化
+     */
+    private Button mBtnSeven;
+    /**
+     * 确认弹窗Dialog
+     */
+    private Button mBtnEight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +71,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnFive.setOnClickListener(this);
         mBtnSix = (Button) findViewById(R.id.btn_six);
         mBtnSix.setOnClickListener(this);
+        mBtnSeven = (Button) findViewById(R.id.btn_seven);
+        mBtnSeven.setOnClickListener(this);
+        mBtnEight = (Button) findViewById(R.id.btn_eight);
+        mBtnEight.setOnClickListener(this);
     }
 
     @Override
@@ -85,6 +99,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_six:
                 IntentUtils.startIntent(this, ButtonSixActivity.class);
+                break;
+            case R.id.btn_seven:
+                IntentUtils.startIntent(this, ButtonSevenActivity.class);
+                break;
+            case R.id.btn_eight:
+                IntentUtils.startIntent(this, ButtonEightActivity.class);
                 break;
         }
     }

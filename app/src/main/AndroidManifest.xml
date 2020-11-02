@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.ButtonSixActivity"></activity>
+        <activity android:name=".Activity.ButtonEightActivity"></activity>
+        <activity android:name=".Activity.ButtonSevenActivity" />
+        <activity android:name=".Activity.ButtonSixActivity" />
         <activity android:name=".Activity.ButtonFiveActivity" />
         <activity android:name=".Activity.ButtonFourActivity" />
         <activity android:name=".Activity.ButtonThreeActivity" />
