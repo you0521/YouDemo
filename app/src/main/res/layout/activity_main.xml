@@ -94,6 +94,12 @@
                 android:layout_height="wrap_content"
                 android:text="Retrofit请求" />
 
+            <Button
+                android:id="@+id/btn_fourteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SpanningString" />
+
         </LinearLayout>
 
     </ScrollView>

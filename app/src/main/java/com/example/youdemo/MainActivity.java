@@ -10,6 +10,7 @@ import com.example.youdemo.activity.ButtonEightActivity;
 import com.example.youdemo.activity.ButtonElevenActivity;
 import com.example.youdemo.activity.ButtonFiveActivity;
 import com.example.youdemo.activity.ButtonFourActivity;
+import com.example.youdemo.activity.ButtonFourteenActivity;
 import com.example.youdemo.activity.ButtonNineActivity;
 import com.example.youdemo.activity.ButtonOneActivity;
 import com.example.youdemo.activity.ButtonSevenActivity;
@@ -75,6 +76,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * Retrofit请求
      */
     private Button mBtnThirteen;
+    /**
+     * tab
+     */
+    private Button mBtnFourteen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,6 +115,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnTwelve.setOnClickListener(this);
         mBtnThirteen = (Button) findViewById(R.id.btn_thirteen);
         mBtnThirteen.setOnClickListener(this);
+        mBtnFourteen = (Button) findViewById(R.id.btn_fourteen);
+        mBtnFourteen.setOnClickListener(this);
     }
 
     @Override
@@ -155,6 +162,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_thirteen:
                 IntentUtils.startIntent(this, ButtonThirteenActivity.class);
+                break;
+            case R.id.btn_fourteen:
+                IntentUtils.startIntent(this, ButtonFourteenActivity.class);
                 break;
         }
     }
