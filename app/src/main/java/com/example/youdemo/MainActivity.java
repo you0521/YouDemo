@@ -15,6 +15,7 @@ import com.example.youdemo.activity.ButtonOneActivity;
 import com.example.youdemo.activity.ButtonSevenActivity;
 import com.example.youdemo.activity.ButtonSixActivity;
 import com.example.youdemo.activity.ButtonTenActivity;
+import com.example.youdemo.activity.ButtonThirteenActivity;
 import com.example.youdemo.activity.ButtonThreeActivity;
 import com.example.youdemo.activity.ButtonTwelveActivity;
 import com.example.youdemo.activity.ButtonTwoActivity;
@@ -70,6 +71,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * RatingBar
      */
     private Button mBtnTwelve;
+    /**
+     * Retrofit请求
+     */
+    private Button mBtnThirteen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +108,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnEleven.setOnClickListener(this);
         mBtnTwelve = (Button) findViewById(R.id.btn_twelve);
         mBtnTwelve.setOnClickListener(this);
+        mBtnThirteen = (Button) findViewById(R.id.btn_thirteen);
+        mBtnThirteen.setOnClickListener(this);
     }
 
     @Override
@@ -145,6 +152,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_twelve:
                 IntentUtils.startIntent(this, ButtonTwelveActivity.class);
+                break;
+            case R.id.btn_thirteen:
+                IntentUtils.startIntent(this, ButtonThirteenActivity.class);
                 break;
         }
     }

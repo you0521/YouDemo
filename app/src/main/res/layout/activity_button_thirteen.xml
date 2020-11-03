@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ButtonThirteenActivity">
+
+    <Button
+        android:id="@+id/btn_get1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get不传参"/>
+
+    <Button
+        android:id="@+id/btn_get2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get传参"/>
+    <Button
+        android:id="@+id/btn_get3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get url拼接地址"/>
+
+    <Button
+        android:id="@+id/btn_get4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get path"/>
+
+    <Button
+        android:id="@+id/btn_get5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get header"/>
+
+    <Button
+        android:id="@+id/btn_get6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get headers"/>
+
+    <Button
+        android:id="@+id/btn_post1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="post不传参"/>
+    <Button
+        android:id="@+id/btn_post2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="post传参"/>
+    <Button
+        android:id="@+id/btn_post3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="post url动态拼接"/>
+    <Button
+        android:id="@+id/btn_post4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="post Multipart"/>
+
+</LinearLayout>

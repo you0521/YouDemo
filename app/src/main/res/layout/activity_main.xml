@@ -86,7 +86,13 @@
                 android:id="@+id/btn_twelve"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RatingBar"/>
+                android:text="RatingBar" />
+
+            <Button
+                android:id="@+id/btn_thirteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Retrofit请求" />
 
         </LinearLayout>
 
