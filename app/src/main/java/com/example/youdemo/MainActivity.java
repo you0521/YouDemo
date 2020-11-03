@@ -1,6 +1,5 @@
 package com.example.youdemo;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,6 +7,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.youdemo.activity.ButtonEightActivity;
+import com.example.youdemo.activity.ButtonElevenActivity;
 import com.example.youdemo.activity.ButtonFiveActivity;
 import com.example.youdemo.activity.ButtonFourActivity;
 import com.example.youdemo.activity.ButtonNineActivity;
@@ -16,6 +16,7 @@ import com.example.youdemo.activity.ButtonSevenActivity;
 import com.example.youdemo.activity.ButtonSixActivity;
 import com.example.youdemo.activity.ButtonTenActivity;
 import com.example.youdemo.activity.ButtonThreeActivity;
+import com.example.youdemo.activity.ButtonTwelveActivity;
 import com.example.youdemo.activity.ButtonTwoActivity;
 import com.example.youdemo.utils.IntentUtils;
 
@@ -61,6 +62,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 绝对布局
      */
     private Button mBtnTen;
+    /**
+     * GreenDao
+     */
+    private Button mBtnEleven;
+    /**
+     * RatingBar
+     */
+    private Button mBtnTwelve;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +99,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnNine.setOnClickListener(this);
         mBtnTen = (Button) findViewById(R.id.btn_ten);
         mBtnTen.setOnClickListener(this);
+        mBtnEleven = (Button) findViewById(R.id.btn_eleven);
+        mBtnEleven.setOnClickListener(this);
+        mBtnTwelve = (Button) findViewById(R.id.btn_twelve);
+        mBtnTwelve.setOnClickListener(this);
     }
 
     @Override
@@ -126,6 +139,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_ten:
                 IntentUtils.startIntent(this, ButtonTenActivity.class);
+                break;
+            case R.id.btn_eleven:
+                IntentUtils.startIntent(this, ButtonElevenActivity.class);
+                break;
+            case R.id.btn_twelve:
+                IntentUtils.startIntent(this, ButtonTwelveActivity.class);
                 break;
         }
     }

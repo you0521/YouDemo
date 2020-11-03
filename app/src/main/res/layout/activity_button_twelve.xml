@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ButtonTwelveActivity">
+
+    <com.example.youdemo.view.RatingBar
+        android:layout_centerInParent="true"
+        android:id="@+id/rb"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        app:starCount="5"
+        app:starEmpty="@mipmap/icon_gray_star"
+        app:starFill="@mipmap/icon_pl_star"
+        app:starImageSize="20dp"
+        app:starPadding="10dp"
+        app:starStep="1"
+        app:stepSize="Full"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

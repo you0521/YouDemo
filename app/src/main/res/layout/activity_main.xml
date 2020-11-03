@@ -76,6 +76,18 @@
                 android:layout_height="wrap_content"
                 android:text="绝对布局" />
 
+            <Button
+                android:id="@+id/btn_eleven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GreenDao" />
+
+            <Button
+                android:id="@+id/btn_twelve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RatingBar"/>
+
         </LinearLayout>
 
     </ScrollView>
