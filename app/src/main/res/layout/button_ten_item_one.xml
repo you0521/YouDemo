@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/button_nine_item_one"
+    android:visibility="gone"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="first"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/second"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/first"
+        app:layout_constraintRight_toLeftOf="@+id/third"
+        android:text="second"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="third"
+        app:layout_constraintLeft_toRightOf="@+id/second"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/match_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="first"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first"
+        app:layout_constraintRight_toLeftOf="@+id/match_second"/>
+
+    <Button
+        android:id="@+id/match_second"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="second"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintLeft_toRightOf="@+id/match_first"
+        app:layout_constraintRight_toLeftOf="@+id/match_third"
+        app:layout_constraintTop_toTopOf="@+id/match_first"/>
+
+    <Button
+        android:id="@+id/match_third"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="third"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintLeft_toRightOf="@+id/match_second"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/match_first"/>
+
+    <Button
+        android:id="@+id/spread_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="first"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/spared_second"
+        app:layout_constraintTop_toBottomOf="@+id/match_first"/>
+
+    <Button
+        android:id="@+id/spared_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="second"
+        app:layout_constraintTop_toTopOf="@+id/spread_first"
+        app:layout_constraintLeft_toRightOf="@+id/spread_first"
+        app:layout_constraintRight_toLeftOf="@+id/spread_third"/>
+
+    <Button
+        android:id="@+id/spread_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="third"
+        app:layout_constraintTop_toTopOf="@+id/spread_first"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/spared_second"/>
+
+    <Button
+        android:id="@+id/packed_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="first"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@+id/spread_first"
+        app:layout_constraintRight_toLeftOf="@+id/packed_second"/>
+
+    <Button
+        android:id="@+id/packed_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="second"
+        app:layout_constraintTop_toTopOf="@+id/packed_first"
+        app:layout_constraintLeft_toRightOf="@+id/packed_first"
+        app:layout_constraintRight_toLeftOf="@+id/packed_third"/>
+
+    <Button
+        android:id="@+id/packed_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="third"
+        app:layout_constraintTop_toTopOf="@+id/packed_first"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/packed_second"/>
+
+    <Button
+        android:id="@+id/bias_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0.2"
+        android:text="first"
+        app:layout_constraintTop_toBottomOf="@+id/packed_first"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/bias_second"
+        />
+
+    <Button
+        android:id="@+id/bias_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="second"
+        app:layout_constraintTop_toTopOf="@+id/bias_first"
+        app:layout_constraintLeft_toRightOf="@+id/bias_first"
+        app:layout_constraintRight_toLeftOf="@+id/bias_third"
+        />
+
+    <Button
+        android:id="@+id/bias_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="third"
+        app:layout_constraintTop_toTopOf="@+id/bias_first"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/bias_second"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

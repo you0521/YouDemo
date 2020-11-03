@@ -50,25 +50,31 @@
                 android:id="@+id/btn_six"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SuperTextView文字挺好看"/>
+                android:text="SuperTextView文字挺好看" />
 
             <Button
                 android:id="@+id/btn_seven"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="时间、小数点转化"/>
+                android:text="时间、小数点转化" />
 
             <Button
                 android:id="@+id/btn_eight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="确认弹窗Dialog"/>
+                android:text="确认弹窗Dialog" />
 
             <Button
                 android:id="@+id/btn_nine"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="本地存储记录"/>
+                android:text="本地存储记录" />
+
+            <Button
+                android:id="@+id/btn_ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="绝对布局" />
 
         </LinearLayout>
 
