@@ -6,15 +6,16 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.youdemo.Activity.ButtonEightActivity;
-import com.example.youdemo.Activity.ButtonFiveActivity;
-import com.example.youdemo.Activity.ButtonFourActivity;
-import com.example.youdemo.Activity.ButtonOneActivity;
-import com.example.youdemo.Activity.ButtonSevenActivity;
-import com.example.youdemo.Activity.ButtonSixActivity;
-import com.example.youdemo.Activity.ButtonThreeActivity;
-import com.example.youdemo.Activity.ButtonTwoActivity;
-import com.example.youdemo.Utils.IntentUtils;
+import com.example.youdemo.activity.ButtonEightActivity;
+import com.example.youdemo.activity.ButtonFiveActivity;
+import com.example.youdemo.activity.ButtonFourActivity;
+import com.example.youdemo.activity.ButtonNineActivity;
+import com.example.youdemo.activity.ButtonOneActivity;
+import com.example.youdemo.activity.ButtonSevenActivity;
+import com.example.youdemo.activity.ButtonSixActivity;
+import com.example.youdemo.activity.ButtonThreeActivity;
+import com.example.youdemo.activity.ButtonTwoActivity;
+import com.example.youdemo.utils.IntentUtils;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -50,6 +51,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 确认弹窗Dialog
      */
     private Button mBtnEight;
+    /**
+     * 本地存储记录
+     */
+    private Button mBtnNine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +80,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnSeven.setOnClickListener(this);
         mBtnEight = (Button) findViewById(R.id.btn_eight);
         mBtnEight.setOnClickListener(this);
+        mBtnNine = (Button) findViewById(R.id.btn_nine);
+        mBtnNine.setOnClickListener(this);
     }
 
     @Override
@@ -105,6 +112,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_eight:
                 IntentUtils.startIntent(this, ButtonEightActivity.class);
+                break;
+            case R.id.btn_nine:
+                IntentUtils.startIntent(this, ButtonNineActivity.class);
                 break;
         }
     }

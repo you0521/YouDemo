@@ -1,4 +1,4 @@
-package com.example.youdemo.SuperTextView;
+package com.example.youdemo.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

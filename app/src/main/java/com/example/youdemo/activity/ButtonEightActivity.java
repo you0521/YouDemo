@@ -1,6 +1,5 @@
-package com.example.youdemo.Activity;
+package com.example.youdemo.activity;
 
-import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,7 +7,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.youdemo.MainActivity;
 import com.example.youdemo.R;
 import com.example.youdemo.dialog.CustomDialog;
 

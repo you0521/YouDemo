@@ -1,4 +1,4 @@
-package com.example.youdemo.Activity;
+package com.example.youdemo.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 
-import com.example.youdemo.Camera.CameraFragment;
+import com.example.youdemo.camera.CameraFragment;
 import com.example.youdemo.R;
 
 public class ButtonThreeActivity extends AppCompatActivity {

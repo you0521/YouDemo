@@ -1,4 +1,4 @@
-package com.example.youdemo.Camera;
+package com.example.youdemo.camera;
 
 
 import android.content.Context;

@@ -12,14 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.ButtonEightActivity"></activity>
-        <activity android:name=".Activity.ButtonSevenActivity" />
-        <activity android:name=".Activity.ButtonSixActivity" />
-        <activity android:name=".Activity.ButtonFiveActivity" />
-        <activity android:name=".Activity.ButtonFourActivity" />
-        <activity android:name=".Activity.ButtonThreeActivity" />
-        <activity android:name=".Activity.ButtonTwoActivity" />
-        <activity android:name=".Activity.ButtonOneActivity" />
+        <activity android:name=".activity.ButtonNineActivity"></activity>
+        <activity android:name=".activity.ButtonEightActivity" />
+        <activity android:name=".activity.ButtonSevenActivity" />
+        <activity android:name=".activity.ButtonSixActivity" />
+        <activity android:name=".activity.ButtonFiveActivity" />
+        <activity android:name=".activity.ButtonFourActivity" />
+        <activity android:name=".activity.ButtonThreeActivity" />
+        <activity android:name=".activity.ButtonTwoActivity" />
+        <activity android:name=".activity.ButtonOneActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
