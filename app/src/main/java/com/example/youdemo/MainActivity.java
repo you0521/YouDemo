@@ -16,6 +16,7 @@ import com.example.youdemo.activity.ButtonNineActivity;
 import com.example.youdemo.activity.ButtonOneActivity;
 import com.example.youdemo.activity.ButtonSevenActivity;
 import com.example.youdemo.activity.ButtonSixActivity;
+import com.example.youdemo.activity.ButtonSixteenActivity;
 import com.example.youdemo.activity.ButtonTenActivity;
 import com.example.youdemo.activity.ButtonThirteenActivity;
 import com.example.youdemo.activity.ButtonThreeActivity;
@@ -85,6 +86,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 柱状图
      */
     private Button mBtnFifteen;
+    /**
+     * 分享弹窗
+     */
+    private Button mBtnSixteen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,6 +129,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnFourteen.setOnClickListener(this);
         mBtnFifteen = (Button) findViewById(R.id.btn_fifteen);
         mBtnFifteen.setOnClickListener(this);
+        mBtnSixteen = (Button) findViewById(R.id.btn_sixteen);
+        mBtnSixteen.setOnClickListener(this);
     }
 
     @Override
@@ -175,6 +182,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_fifteen:
                 IntentUtils.startIntent(this, ButtonFifteenActivity.class);
+                break;
+            case R.id.btn_sixteen:
+                IntentUtils.startIntent(this, ButtonSixteenActivity.class);
                 break;
         }
     }

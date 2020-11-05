@@ -20,4 +20,6 @@
 
 
     <color name="text">#999999</color>
+
+    <color name="colorGray">#E1DBDB</color>
 </resources>
