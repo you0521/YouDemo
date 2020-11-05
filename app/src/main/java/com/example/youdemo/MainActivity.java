@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.youdemo.activity.ButtonEightActivity;
 import com.example.youdemo.activity.ButtonElevenActivity;
+import com.example.youdemo.activity.ButtonFifteenActivity;
 import com.example.youdemo.activity.ButtonFiveActivity;
 import com.example.youdemo.activity.ButtonFourActivity;
 import com.example.youdemo.activity.ButtonFourteenActivity;
@@ -80,6 +81,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * tab
      */
     private Button mBtnFourteen;
+    /**
+     * 柱状图
+     */
+    private Button mBtnFifteen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,6 +122,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnThirteen.setOnClickListener(this);
         mBtnFourteen = (Button) findViewById(R.id.btn_fourteen);
         mBtnFourteen.setOnClickListener(this);
+        mBtnFifteen = (Button) findViewById(R.id.btn_fifteen);
+        mBtnFifteen.setOnClickListener(this);
     }
 
     @Override
@@ -165,6 +172,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_fourteen:
                 IntentUtils.startIntent(this, ButtonFourteenActivity.class);
+                break;
+            case R.id.btn_fifteen:
+                IntentUtils.startIntent(this, ButtonFifteenActivity.class);
                 break;
         }
     }

@@ -7,4 +7,17 @@
     <color name="white">#ffffff</color>
     <color name="fadegray">#AFAFAF</color>
     <color name="gray_line_color">#D81B60</color>
+
+
+    <color name="ovalTop">#FFB443</color>
+    <color name="ovalBot">#FFD798</color>
+
+
+
+    <color name="start">#FDE67C</color>
+    <color name="stop">#FEAF38</color>
+
+
+
+    <color name="text">#999999</color>
 </resources>
