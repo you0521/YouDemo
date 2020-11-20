@@ -104,13 +104,19 @@
                 android:id="@+id/btn_fifteen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="柱状图"/>
+                android:text="柱状图" />
 
             <Button
                 android:id="@+id/btn_sixteen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="分享弹窗"/>
+                android:text="分享弹窗" />
+
+            <Button
+                android:id="@+id/btn_seventeen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="枚举代替if/else" />
 
         </LinearLayout>
 

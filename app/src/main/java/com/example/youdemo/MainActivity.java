@@ -15,6 +15,7 @@ import com.example.youdemo.activity.ButtonFourteenActivity;
 import com.example.youdemo.activity.ButtonNineActivity;
 import com.example.youdemo.activity.ButtonOneActivity;
 import com.example.youdemo.activity.ButtonSevenActivity;
+import com.example.youdemo.activity.ButtonSevenTeenActivity;
 import com.example.youdemo.activity.ButtonSixActivity;
 import com.example.youdemo.activity.ButtonSixteenActivity;
 import com.example.youdemo.activity.ButtonTenActivity;
@@ -90,6 +91,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 分享弹窗
      */
     private Button mBtnSixteen;
+    /**
+     * 枚举代替if/else
+     */
+    private Button mBtnSeventeen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,6 +136,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnFifteen.setOnClickListener(this);
         mBtnSixteen = (Button) findViewById(R.id.btn_sixteen);
         mBtnSixteen.setOnClickListener(this);
+        mBtnSeventeen = (Button) findViewById(R.id.btn_seventeen);
+        mBtnSeventeen.setOnClickListener(this);
     }
 
     @Override
@@ -185,6 +192,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_sixteen:
                 IntentUtils.startIntent(this, ButtonSixteenActivity.class);
+                break;
+            case R.id.btn_seventeen:
+                IntentUtils.startIntent(this, ButtonSevenTeenActivity.class);
                 break;
         }
     }
