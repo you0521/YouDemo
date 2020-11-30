@@ -7,6 +7,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.youdemo.activity.ButtonEightActivity;
+import com.example.youdemo.activity.ButtonEighteenActivity;
 import com.example.youdemo.activity.ButtonElevenActivity;
 import com.example.youdemo.activity.ButtonFifteenActivity;
 import com.example.youdemo.activity.ButtonFiveActivity;
@@ -95,6 +96,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 枚举代替if/else
      */
     private Button mBtnSeventeen;
+    /**
+     * 小数点转化试一下
+     */
+    private Button mBtnEighteen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,6 +143,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnSixteen.setOnClickListener(this);
         mBtnSeventeen = (Button) findViewById(R.id.btn_seventeen);
         mBtnSeventeen.setOnClickListener(this);
+        mBtnEighteen = (Button) findViewById(R.id.btn_eighteen);
+        mBtnEighteen.setOnClickListener(this);
     }
 
     @Override
@@ -195,6 +202,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_seventeen:
                 IntentUtils.startIntent(this, ButtonSevenTeenActivity.class);
+                break;
+            case R.id.btn_eighteen:
+                IntentUtils.startIntent(this, ButtonEighteenActivity.class);
                 break;
         }
     }
