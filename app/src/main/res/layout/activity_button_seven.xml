@@ -17,13 +17,19 @@
         android:id="@+id/get"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="获取当前时间"/>
+        android:text="获取当前时间" />
+
+    <Button
+        android:id="@+id/seven_btn_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="时间转换为时间戳" />
 
     <Button
         android:id="@+id/seven_btn_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="毫秒转为时间点形式"/>
+        android:text="毫秒转为时间点形式" />
 
     <TextView
         android:id="@+id/tx"

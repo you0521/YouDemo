@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.youdemo.R;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -30,6 +31,10 @@ public class ButtonSevenActivity extends AppCompatActivity implements View.OnCli
      * 毫秒转为时间点形式
      */
     private Button mSevenBtnTime;
+    /**
+     * 时间转换为时间戳
+     */
+    private Button mSevenBtnData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +51,8 @@ public class ButtonSevenActivity extends AppCompatActivity implements View.OnCli
         mGet.setOnClickListener(this);
         mSevenBtnTime = (Button) findViewById(R.id.seven_btn_time);
         mSevenBtnTime.setOnClickListener(this);
+        mSevenBtnData = (Button) findViewById(R.id.seven_btn_data);
+        mSevenBtnData.setOnClickListener(this);
     }
 
     @Override
@@ -68,6 +75,18 @@ public class ButtonSevenActivity extends AppCompatActivity implements View.OnCli
             case R.id.seven_btn_time:
                 String minuteSecond = getMinuteSecond(150000000);
                 mTx.setText(minuteSecond);
+                break;
+            case R.id.seven_btn_data:
+                SimpleDateFormat simple = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+                Date date1 = new Date();
+                try {
+                    date1 = simple.parse("2020-6-15 16:00");
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+                assert date1 != null;
+                long time1 = date1.getTime();
+                mTx.setText(String.valueOf(time1));
                 break;
         }
     }
