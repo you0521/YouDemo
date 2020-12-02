@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.youdemo.R;
 
-import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -20,10 +19,6 @@ public class ButtonSevenActivity extends AppCompatActivity implements View.OnCli
      */
     private Button mBtn;
     /**
-     * 算
-     */
-    private Button mJisuan;
-    /**
      * Hello World!
      */
     private TextView mTx;
@@ -31,6 +26,10 @@ public class ButtonSevenActivity extends AppCompatActivity implements View.OnCli
      * 获取当前时间
      */
     private Button mGet;
+    /**
+     * 毫秒转为时间点形式
+     */
+    private Button mSevenBtnTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,11 +41,11 @@ public class ButtonSevenActivity extends AppCompatActivity implements View.OnCli
     private void initView() {
         mBtn = (Button) findViewById(R.id.btn);
         mBtn.setOnClickListener(this);
-        mJisuan = (Button) findViewById(R.id.jisuan);
-        mJisuan.setOnClickListener(this);
         mTx = (TextView) findViewById(R.id.tx);
         mGet = (Button) findViewById(R.id.get);
         mGet.setOnClickListener(this);
+        mSevenBtnTime = (Button) findViewById(R.id.seven_btn_time);
+        mSevenBtnTime.setOnClickListener(this);
     }
 
     @Override
@@ -59,11 +58,6 @@ public class ButtonSevenActivity extends AppCompatActivity implements View.OnCli
                 String s = stampToDate(time);
                 mTx.setText(s);
                 break;
-            case R.id.jisuan:
-                DecimalFormat df = new DecimalFormat("00.0");//格式化小数
-                String num = df.format((float) 9 / 57 * 100);//返回的是String类型
-                mTx.setText(num + "%");
-                break;
             case R.id.get:
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy年MM月dd日 HH时mm分ss秒");// HH:mm:ss
                 //获取当前时间
@@ -71,7 +65,40 @@ public class ButtonSevenActivity extends AppCompatActivity implements View.OnCli
                 String format = simpleDateFormat.format(date);
                 mTx.setText(format);
                 break;
+            case R.id.seven_btn_time:
+                String minuteSecond = getMinuteSecond(150000000);
+                mTx.setText(minuteSecond);
+                break;
         }
+    }
+
+    /**
+     * 将毫秒数换算成 时间 00:00 形式
+     */
+    public static String getMinuteSecond(long time) {
+        int ss = 1000;
+        int mi = ss * 60;
+        int hh = mi * 60;
+        int dd = hh * 24;
+
+        long day = time / dd;
+        long hour = (time - day * dd) / hh;
+        long minute = (time - day * dd - hour * hh) / mi;
+        long second = (time - day * dd - hour * hh - minute * mi) / ss;
+
+        StringBuffer stringBuffer = new StringBuffer();
+
+        if (day > 0) {
+            stringBuffer.append(day + "天");
+        }
+        if (hour > 0) {
+            stringBuffer.append(hour + ":");
+        }
+
+        String strMinute = minute < 10 ? "0" + minute : "" + minute;
+        String strSecond = second < 10 ? "0" + second : "" + second;
+        stringBuffer.append(strMinute + ":" + strSecond);
+        return stringBuffer.toString();
     }
 
     /*

@@ -14,16 +14,16 @@
         android:text="时间转换" />
 
     <Button
-        android:id="@+id/jisuan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="保留一位小数" />
-
-    <Button
         android:id="@+id/get"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="获取当前时间"/>
+
+    <Button
+        android:id="@+id/seven_btn_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="毫秒转为时间点形式"/>
 
     <TextView
         android:id="@+id/tx"

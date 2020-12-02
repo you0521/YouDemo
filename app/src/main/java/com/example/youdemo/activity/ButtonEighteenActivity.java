@@ -42,7 +42,7 @@ public class ButtonEighteenActivity extends AppCompatActivity implements View.On
                 DecimalFormat decimalFormat = new DecimalFormat("#0.#");//若需要进行补位，更改为“#0.0”
                 //设置不进行四舍五入，默认是四舍五入的
                 decimalFormat.setRoundingMode(RoundingMode.FLOOR);
-                float f = (float) 80.59;
+                float f = (float) 80.96;
                 mButtonEightTeenTv.setText(decimalFormat.format(f));
                 break;
         }
