@@ -14,6 +14,7 @@ import com.example.youdemo.activity.ButtonFiveActivity;
 import com.example.youdemo.activity.ButtonFourActivity;
 import com.example.youdemo.activity.ButtonFourteenActivity;
 import com.example.youdemo.activity.ButtonNineActivity;
+import com.example.youdemo.activity.ButtonNineteenActivity;
 import com.example.youdemo.activity.ButtonOneActivity;
 import com.example.youdemo.activity.ButtonSevenActivity;
 import com.example.youdemo.activity.ButtonSevenTeenActivity;
@@ -100,6 +101,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 小数点转化试一下
      */
     private Button mBtnEighteen;
+    /**
+     * 跳转应用商店评论
+     */
+    private Button mBenNineteen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -145,6 +150,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnSeventeen.setOnClickListener(this);
         mBtnEighteen = (Button) findViewById(R.id.btn_eighteen);
         mBtnEighteen.setOnClickListener(this);
+        mBenNineteen = (Button) findViewById(R.id.ben_nineteen);
+        mBenNineteen.setOnClickListener(this);
     }
 
     @Override
@@ -205,6 +212,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_eighteen:
                 IntentUtils.startIntent(this, ButtonEighteenActivity.class);
+                break;
+            case R.id.ben_nineteen:
+                IntentUtils.startIntent(this, ButtonNineteenActivity.class);
                 break;
         }
     }

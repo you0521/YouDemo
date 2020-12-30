@@ -122,7 +122,13 @@
                 android:id="@+id/btn_eighteen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="小数点转化试一下"/>
+                android:text="小数点转化试一下" />
+
+            <Button
+                android:id="@+id/ben_nineteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="跳转应用商店评论" />
 
         </LinearLayout>
 

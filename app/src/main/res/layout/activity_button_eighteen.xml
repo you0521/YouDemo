@@ -13,6 +13,12 @@
         android:layout_height="wrap_content"
         android:text="保留一位小数，不四舍五入，不进行补位" />
 
+    <Button
+        android:id="@+id/button_eight_teen_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="类型转化问题" />
+
     <TextView
         android:id="@+id/button_eight_teen_tv"
         android:layout_width="match_parent"

@@ -19,6 +19,10 @@ public class ButtonEighteenActivity extends AppCompatActivity implements View.On
      */
     private Button mButtonEightTeenBtn1;
     private TextView mButtonEightTeenTv;
+    /**
+     * 类型转化问题
+     */
+    private Button mButtonEightTeenBtn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,8 @@ public class ButtonEighteenActivity extends AppCompatActivity implements View.On
         mButtonEightTeenBtn1 = (Button) findViewById(R.id.button_eight_teen_btn1);
         mButtonEightTeenBtn1.setOnClickListener(this);
         mButtonEightTeenTv = (TextView) findViewById(R.id.button_eight_teen_tv);
+        mButtonEightTeenBtn2 = (Button) findViewById(R.id.button_eight_teen_btn2);
+        mButtonEightTeenBtn2.setOnClickListener(this);
     }
 
     @Override
@@ -44,6 +50,11 @@ public class ButtonEighteenActivity extends AppCompatActivity implements View.On
                 decimalFormat.setRoundingMode(RoundingMode.FLOOR);
                 float f = (float) 80.96;
                 mButtonEightTeenTv.setText(decimalFormat.format(f));
+                break;
+            case R.id.button_eight_teen_btn2:
+                double v1 = Double.parseDouble("95.8");
+                int v2 = (int) v1;
+                mButtonEightTeenTv.setText(v2 + "is");
                 break;
         }
     }
