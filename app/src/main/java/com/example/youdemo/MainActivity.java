@@ -24,6 +24,7 @@ import com.example.youdemo.activity.ButtonTenActivity;
 import com.example.youdemo.activity.ButtonThirteenActivity;
 import com.example.youdemo.activity.ButtonThreeActivity;
 import com.example.youdemo.activity.ButtonTwelveActivity;
+import com.example.youdemo.activity.ButtonTwentyActivity;
 import com.example.youdemo.activity.ButtonTwoActivity;
 import com.example.youdemo.utils.IntentUtils;
 
@@ -105,6 +106,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 跳转应用商店评论
      */
     private Button mBenNineteen;
+    /**
+     * 滑动改变标题栏透明度
+     */
+    private Button mBtnTwenty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -152,6 +157,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnEighteen.setOnClickListener(this);
         mBenNineteen = (Button) findViewById(R.id.ben_nineteen);
         mBenNineteen.setOnClickListener(this);
+        mBtnTwenty = (Button) findViewById(R.id.btn_twenty);
+        mBtnTwenty.setOnClickListener(this);
     }
 
     @Override
@@ -215,6 +222,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.ben_nineteen:
                 IntentUtils.startIntent(this, ButtonNineteenActivity.class);
+                break;
+            case R.id.btn_twenty:
+                IntentUtils.startIntent(this, ButtonTwentyActivity.class);
                 break;
         }
     }

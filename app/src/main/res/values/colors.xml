@@ -13,13 +13,14 @@
     <color name="ovalBot">#FFD798</color>
 
 
-
     <color name="start">#FDE67C</color>
     <color name="stop">#FEAF38</color>
-
 
 
     <color name="text">#999999</color>
 
     <color name="colorGray">#E1DBDB</color>
+
+
+    <color name="black_alpha_0">#00000000</color>
 </resources>
