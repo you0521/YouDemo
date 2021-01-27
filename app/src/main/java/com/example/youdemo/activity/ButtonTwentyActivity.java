@@ -36,12 +36,18 @@ public class ButtonTwentyActivity extends AppCompatActivity implements Observabl
             Log.i("TAG", "alpha--->" + alpha);
 
             //layout全部透明
-//			layoutHead.setAlpha(scale);
+            //layoutHead.setAlpha(scale);
 
             //只是layout背景透明(仿知乎滑动效果)
             if (alpha >= 0) {
                 mActivityTwentyTitle.setBackgroundColor(Color.argb((int) alpha, 0b11001100, 0b0, 0b11111111));
-//                mActivityTwentyTitle.setBackgroundColor(alpha, 0b11001100, 0b0, 0b11111111);
+                //mActivityTwentyTitle.setBackgroundColor(alpha, 0b11001100, 0b0, 0b11111111);
+                //将颜色转为RGB颜色值
+                int color = getResources().getColor(R.color.color_14c7de);
+                int red = (color & 0xff0000) >> 16;
+                int green = (color & 0x00ff00) >> 8;
+                int blue = (color & 0x0000ff);
+                mActivityTwentyTitle.setBackgroundColor(Color.argb((int) alpha, red, green, blue));
             }
         }
     }
