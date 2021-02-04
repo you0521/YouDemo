@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--平移动画标签-->
+    <!--android:fromXDelta	TranslateAnimation(float fromXDelta, …)	起始点X轴坐标，数值，百分比，百分比p，注①-->
+    <!--android:fromYDelta	TranslateAnimation(…, float fromYDelta, …)	起始点Y轴从标，同上规律-->
+    <!--android:toXDelta	TranslateAnimation(…, float toXDelta, …)	结束点X轴坐标，同上规律-->
+    <!--android:toYDelta	TranslateAnimation(…, float toYDelta)	结束点Y轴坐标，同上规律-->
+    <!--注①： 数值、百分数、百分数p，譬如50表示以当前View左上角坐标加50px为初始点、-->
+    <!--50%表示以当前View的左上角加上当前View宽高的50%做为初始点、-->
+    <!--50%p表示以当前View的左上角加上父控件宽高的50%做为初始点-->
+    <translate
+        android:duration="4000"
+        android:fromXDelta="0%p"
+        android:fromYDelta="0%p"
+        android:toXDelta="20%p"
+        android:toYDelta="20%p" />
+    <!--缩放动画标签-->
+    <!--android:fromXScale	ScaleAnimation(float fromX, …)	初始X轴缩放比例，1.0表示无变化-->
+    <!--android:toXScale	ScaleAnimation(…, float toX, …)	结束X轴缩放比例-->
+    <!--android:fromYScale	ScaleAnimation(…, float fromY, …)	初始Y轴缩放比例-->
+    <!--android:toYScale	ScaleAnimation(…, float toY, …)	结束Y轴缩放比例-->
+    <!--android:pivotX	ScaleAnimation(…, float pivotX, …)	缩放起点X轴坐标，数值，百分比，百分比p，注①-->
+    <!--android:pivotY	ScaleAnimation(…, float pivotY)	缩放起点Y轴坐标，同上规律-->
+
+    <scale
+        android:duration="4000"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="0.2"
+        android:toYScale="0.2" />
+    <!--旋转动画标签-->
+    <!--android:fromDegrees	RotateAnimation(float fromDegrees, …)	旋转开始角度，正代表顺时针度数，负代表逆时针度数-->
+    <!--android:toDegrees	RotateAnimation(…, float toDegrees, …)	旋转结束角度，正代表顺时针度数，负代表逆时针度数-->
+    <!--android:pivotX	RotateAnimation(…, float pivotX, …)	缩放起点X坐标，数值，百分比，百分比p，注①-->
+    <!--android:pivotY	RotateAnimation(…, float pivotY)	缩放起点Y坐标，同上规律-->
+    <rotate
+        android:duration="4000"
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="360" />
+    <!--透明度动画标签-->
+    <!--android:fromAlpha	AlphaAnimation(float fromAlpha, …)	动画开始的透明度（0.0到1.0，0.0是全透明，1.0是不透明）-->
+    <!--android:toAlpha	AlphaAnimation(…, float toAlpha)	动画结束的透明度，同上-->
+    <alpha
+        android:duration="4000"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.2" />
+</set>

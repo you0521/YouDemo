@@ -25,6 +25,7 @@ import com.example.youdemo.activity.ButtonThirteenActivity;
 import com.example.youdemo.activity.ButtonThreeActivity;
 import com.example.youdemo.activity.ButtonTwelveActivity;
 import com.example.youdemo.activity.ButtonTwentyActivity;
+import com.example.youdemo.activity.ButtonTwentyOneActivity;
 import com.example.youdemo.activity.ButtonTwoActivity;
 import com.example.youdemo.utils.IntentUtils;
 
@@ -110,6 +111,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 滑动改变标题栏透明度
      */
     private Button mBtnTwenty;
+    /**
+     * 动画
+     */
+    private Button mBtnTwentyOne;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -159,6 +164,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBenNineteen.setOnClickListener(this);
         mBtnTwenty = (Button) findViewById(R.id.btn_twenty);
         mBtnTwenty.setOnClickListener(this);
+        mBtnTwentyOne = (Button) findViewById(R.id.btn_twenty_one);
+        mBtnTwentyOne.setOnClickListener(this);
     }
 
     @Override
@@ -225,6 +232,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_twenty:
                 IntentUtils.startIntent(this, ButtonTwentyActivity.class);
+                break;
+            case R.id.btn_twenty_one:
+                IntentUtils.startIntent(this, ButtonTwentyOneActivity.class);
                 break;
         }
     }
